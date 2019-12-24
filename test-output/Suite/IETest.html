@@ -1,0 +1,333 @@
+<html>
+<head>
+<title>TestNG:  IETest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>IETest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 06 12:28:02 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3713 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TESTNGG.MultipleBrowser.beforeTest()'><b>beforeTest</b><br>Test class: TESTNGG.MultipleBrowser<br>Parameters: ie</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: 
+Command duration or timeout: 6 milliseconds
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;LAPTOP-ATMKCNKF&apos;, ip: &apos;192.168.173.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{capabilities={proxy={}, acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:17354/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, platformName=windows, setWindowRect=true}, sessionId=5f1b3106-d6ee-4ee3-bb6a-f59655a5a806, platform=ANY}]
+Session ID: null
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:278)
+	at TESTNGG.MultipleBrowser.beforeTest(MultipleBrowser.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917277283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917277283'><pre>org.openqa.selenium.UnsupportedCommandException: 
+Command duration or timeout: 6 milliseconds
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;LAPTOP-ATMKCNKF&apos;, ip: &apos;192.168.173.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{capabilities={proxy={}, acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:17354/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, platformName=windows, setWindowRect=true}, sessionId=5f1b3106-d6ee-4ee3-bb6a-f59655a5a806, platform=ANY}]
+Session ID: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:278)
+	at TESTNGG.MultipleBrowser.beforeTest(MultipleBrowser.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>TESTNGG.MultipleBrowser@7b36aa0c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TESTNGG.MultipleBrowser.afterTest()'><b>afterTest</b><br>Test class: TESTNGG.MultipleBrowser</td>
+<td></td>
+<td>-1573023485</td>
+<td>TESTNGG.MultipleBrowser@7b36aa0c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TESTNGG.MultipleBrowser.login()'><b>login</b><br>Test class: TESTNGG.MultipleBrowser</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+tion&quot;:&quot;ویکی‌پدیا، دانشنامهٔ آزاد&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;fa&quot;]},{&quot;name&quot;:&quot;വിക�?കിപീഡിയ (ml)&quot;,&quot;description&quot;:&quot;വിക�?കിപീഡിയ, സ�?വതന�?ത�?ര സര�?�?വ�?വവിജ�?ഞാനകോശം &quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ml&quot;]},{&quot;name&quot;:&quot;Wikipedia (ms)&quot;,&quot;description&quot;:&quot;Wikipedia, ensiklopedia bebas&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ms&quot;]},{&quot;name&quot;:&quot;Wikipedia (ia)&quot;,&quot;description&quot;:&quot;Wikipedia, le encyclopedia libere&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ia&quot;]},{&quot;name&quot;:&quot;Wikipedia (no)&quot;,&quot;description&quot;:&quot;Wikipedia, den frie encyklopedi&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;NO&quot;]},{&quot;name&quot;:&quot;Википеди�? (ru)&quot;,&quot;description&quot;:&quot;Википеди�?, �?вободна�? �?нциклопеди�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ru&quot;]},{&quot;name&quot;:&quot;Wikipedia (br)&quot;,&quot;description&quot;:&quot;Wikipedia, an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;Вікіп�?ды�? (be-tarask)&quot;,&quot;description&quot;:&quot;Вікіп�?ды�?, вольна�? �?нцыкл�?п�?ды�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;ວິ�?ິພີເດ�? (lo)&quot;,&quot;description&quot;:&quot;ວິ�?ິພີເດ�?, ສາລານຸ�?ົມເສລີ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipēdija&quot;,&quot;description&quot;:&quot;Vikipēdija, brīv�? enciklopēdija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1573023439778	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1573023439863	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1573023458447	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/70.0.1/20191030021342/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0.17134.829%20(x64)/default/default/update.xml
+1573023458925	addons.productaddons	INFO	Completed downloading document
+1573023460254	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023460260	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-f05db0
+1573023466467	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023466472	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-a92333
+
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;LAPTOP-ATMKCNKF&apos;, ip: &apos;192.168.173.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:194)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:96)
+	at TESTNGG.MultipleBrowser.beforeTest(MultipleBrowser.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+tion&quot;:&quot;ویکی‌پدیا، دانشنامهٔ آزاد&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;fa&quot;]},{&quot;name&quot;:&quot;വിക�?കിപീഡിയ (ml)&quot;,&quot;description&quot;:&quot;വിക�?കിപീഡിയ, സ�?വതന�?ത�?ര സര�?�?വ�?വവിജ�?ഞാനകോശം &quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ml&quot;]},{&quot;name&quot;:&quot;Wikipedia (ms)&quot;,&quot;description&quot;:&quot;Wikipedia, ensiklopedia bebas&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ms&quot;]},{&quot;name&quot;:&quot;Wikipedia (ia)&quot;,&quot;description&quot;:&quot;Wikipedia, le encyclopedia libere&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ia&quot;]},{&quot;name&quot;:&quot;Wikipedia (no)&quot;,&quot;description&quot;:&quot;Wikipedia, den frie encyklopedi&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;NO&quot;]},{&quot;name&quot;:&quot;Википеди�? (ru)&quot;,&quot;description&quot;:&quot;Википеди�?, �?вободна�? �?нциклопеди�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ru&quot;]},{&quot;name&quot;:&quot;Wikipedia (br)&quot;,&quot;description&quot;:&quot;Wikipedia, an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;Вікіп�?ды�? (be-tarask)&quot;,&quot;description&quot;:&quot;Вікіп�?ды�?, вольна�? �?нцыкл�?п�?ды�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;ວິ�?ິພີເດ�? (lo)&quot;,&quot;description&quot;:&quot;ວິ�?ິພີເດ�?, ສາລານຸ�?ົມເສລີ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipēdija&quot;,&quot;description&quot;:&quot;Vikipēdija, brīv�? enciklopēdija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1573023439778	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1573023439863	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1573023458447	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/70.0.1/20191030021342/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0.17134.829%20(x64)/default/default/update.xml
+1573023458925	addons.productaddons	INFO	Completed downloading document
+1573023460254	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023460260	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-f05db0
+1573023466467	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023466472	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-a92333
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 33 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767511741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767511741'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+tion&quot;:&quot;ویکی‌پدیا، دانشنامهٔ آزاد&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;fa&quot;]},{&quot;name&quot;:&quot;വിക�?കിപീഡിയ (ml)&quot;,&quot;description&quot;:&quot;വിക�?കിപീഡിയ, സ�?വതന�?ത�?ര സര�?�?വ�?വവിജ�?ഞാനകോശം &quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ml&quot;]},{&quot;name&quot;:&quot;Wikipedia (ms)&quot;,&quot;description&quot;:&quot;Wikipedia, ensiklopedia bebas&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ms&quot;]},{&quot;name&quot;:&quot;Wikipedia (ia)&quot;,&quot;description&quot;:&quot;Wikipedia, le encyclopedia libere&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ia&quot;]},{&quot;name&quot;:&quot;Wikipedia (no)&quot;,&quot;description&quot;:&quot;Wikipedia, den frie encyklopedi&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;NO&quot;]},{&quot;name&quot;:&quot;Википеди�? (ru)&quot;,&quot;description&quot;:&quot;Википеди�?, �?вободна�? �?нциклопеди�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ru&quot;]},{&quot;name&quot;:&quot;Wikipedia (br)&quot;,&quot;description&quot;:&quot;Wikipedia, an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;Вікіп�?ды�? (be-tarask)&quot;,&quot;description&quot;:&quot;Вікіп�?ды�?, вольна�? �?нцыкл�?п�?ды�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;ວິ�?ິພີເດ�? (lo)&quot;,&quot;description&quot;:&quot;ວິ�?ິພີເດ�?, ສາລານຸ�?ົມເສລີ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipēdija&quot;,&quot;description&quot;:&quot;Vikipēdija, brīv�? enciklopēdija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1573023439778	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1573023439863	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1573023458447	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/70.0.1/20191030021342/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0.17134.829%20(x64)/default/default/update.xml
+1573023458925	addons.productaddons	INFO	Completed downloading document
+1573023460254	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023460260	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-f05db0
+1573023466467	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023466472	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-a92333
+
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;LAPTOP-ATMKCNKF&apos;, ip: &apos;192.168.173.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:194)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:96)
+	at TESTNGG.MultipleBrowser.beforeTest(MultipleBrowser.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+tion&quot;:&quot;ویکی‌پدیا، دانشنامهٔ آزاد&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;fa&quot;]},{&quot;name&quot;:&quot;വിക�?കിപീഡിയ (ml)&quot;,&quot;description&quot;:&quot;വിക�?കിപീഡിയ, സ�?വതന�?ത�?ര സര�?�?വ�?വവിജ�?ഞാനകോശം &quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ml&quot;]},{&quot;name&quot;:&quot;Wikipedia (ms)&quot;,&quot;description&quot;:&quot;Wikipedia, ensiklopedia bebas&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ms&quot;]},{&quot;name&quot;:&quot;Wikipedia (ia)&quot;,&quot;description&quot;:&quot;Wikipedia, le encyclopedia libere&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ia&quot;]},{&quot;name&quot;:&quot;Wikipedia (no)&quot;,&quot;description&quot;:&quot;Wikipedia, den frie encyklopedi&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;NO&quot;]},{&quot;name&quot;:&quot;Википеди�? (ru)&quot;,&quot;description&quot;:&quot;Википеди�?, �?вободна�? �?нциклопеди�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ru&quot;]},{&quot;name&quot;:&quot;Wikipedia (br)&quot;,&quot;description&quot;:&quot;Wikipedia, an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;Вікіп�?ды�? (be-tarask)&quot;,&quot;description&quot;:&quot;Вікіп�?ды�?, вольна�? �?нцыкл�?п�?ды�?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;ວິ�?ິພີເດ�? (lo)&quot;,&quot;description&quot;:&quot;ວິ�?ິພີເດ�?, ສາລານຸ�?ົມເສລີ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipēdija&quot;,&quot;description&quot;:&quot;Vikipēdija, brīv�? enciklopēdija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1573023439778	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1573023439779	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1573023439863	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1573023458447	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/70.0.1/20191030021342/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0.17134.829%20(x64)/default/default/update.xml
+1573023458925	addons.productaddons	INFO	Completed downloading document
+1573023460254	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023460260	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-f05db0
+1573023466467	addons.productaddons	INFO	downloadXHR File download. status=200
+1573023466472	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Ram\AppData\Local\Temp\tmpaddon-a92333
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 33 more
+</pre></div></td>
+<td>0</td>
+<td>TESTNGG.MultipleBrowser@4c1909a3</td></tr>
+<tr>
+<td title='TESTNGG.MultipleBrowser.login()'><b>login</b><br>Test class: TESTNGG.MultipleBrowser</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: 
+Command duration or timeout: 6 milliseconds
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;LAPTOP-ATMKCNKF&apos;, ip: &apos;192.168.173.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{capabilities={proxy={}, acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:17354/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, platformName=windows, setWindowRect=true}, sessionId=5f1b3106-d6ee-4ee3-bb6a-f59655a5a806, platform=ANY}]
+Session ID: null
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:278)
+	at TESTNGG.MultipleBrowser.beforeTest(MultipleBrowser.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1302141801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1302141801'><pre>org.openqa.selenium.UnsupportedCommandException: 
+Command duration or timeout: 6 milliseconds
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;LAPTOP-ATMKCNKF&apos;, ip: &apos;192.168.173.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{capabilities={proxy={}, acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:17354/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, platformName=windows, setWindowRect=true}, sessionId=5f1b3106-d6ee-4ee3-bb6a-f59655a5a806, platform=ANY}]
+Session ID: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:278)
+	at TESTNGG.MultipleBrowser.beforeTest(MultipleBrowser.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TESTNGG.MultipleBrowser@7b36aa0c</td></tr>
+</table><p>
+</body>
+</html>

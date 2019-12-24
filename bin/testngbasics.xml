@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testng Automation Suite" verbose="10">
+  <test name="Different testng feature test">
+      <classes>
+      <class name="TESTNGG.TestNgFeatures">
+      <methods>
+      <include name="loginTest"/>
+      <include name="homePageTest"/>
+      </methods>
+         </class>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
